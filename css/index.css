@@ -1,0 +1,76 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fff;
+
+}
+
+.get-taxes {
+    padding: 5px 10px;
+}
+
+.form__title {
+    font-weight: normal;
+}
+
+
+.get-taxes__input {
+    border: 0;
+    border-bottom: 1px solid #6eafff;
+    outline: none;
+}
+
+
+.get-taxes__button {
+    border: 0;
+    background-color: #2285ff;
+    color: #fff;
+    width: 65px;
+    margin-left: 15px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 768px) {
+    .get-taxes__button {
+        width: 110px;
+
+    }
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 95px 0 0;
+}
+
+.card {}
+
+.card__icon {
+    font-size: 35px;
+    color: #6eafff;
+}

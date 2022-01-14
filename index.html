@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class=" wrapper">
+        <div class="get-taxes">
+            <form class="form-taxes" name="form">
+                <h2 class="form__title">введите зарплату</h2>
+                <input type="number" class="get-taxes__input" placeholder="95.000 рублей" required>
+                <button class="get-taxes__button" aria-hidden="true" type="submit"><i
+                        class="fas fa-search-dollar"></i></button>
+            </form>
+
+            <div class="get-taxes__description">
+                <ul class="cards">
+                    <li class="card"><i class="fas fa-user-alt card__icon"></i>
+                        <h3 class="card__value" id="pens-tax">20900</h3>
+                        <p>пенсионный фонд</p>
+                    </li>
+                    <li class="card"><i class="fas fa-hand-holding-usd card__icon"></i>
+                        <h3 class="card__value" id="ndfl-tax">12350</h3>
+                        <p>Налог на доходы (НДФЛ)</p>
+                    </li>
+                    <li class="card"><i class="fas fa-shield-alt card__icon"></i>
+                        <h3 class="card__value" id="social-tax">2850</h3>
+                        <p>Фонд социального страхования</p>
+                    </li>
+                    <li class="card"><i class="fas fa-heartbeat card__icon"></i>
+                        <h3 class="card__value" id="medical-tax">4750</h3>
+                        <p> Фонд обязательного медицинского страхования</p>
+                    </li>
+                    <li class="card"><i class="fas fa-ruble-sign card__icon"></i>
+                        <h3 class="card__value" id="total">123500</h3>
+                        <p>З/П без вычета налогов</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/d02f55b340.js" crossorigin="anonymous"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
