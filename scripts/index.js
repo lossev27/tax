@@ -7,13 +7,13 @@ const socialFundId = document.getElementById("social-tax");
 const medicalFundId = document.getElementById("medical-tax");
 const totalId = document.getElementById("total");
 
-function getTaxes(event) {
-  event.preventDefault();
+function getTaxes(e) {
+  e.preventDefault();
   const taxesInputValue = Number(taxesInput.value);
-  const pensionFund = taxesInputValue * 0.22;
-  const medicalFund = taxesInputValue * 0.05;
-  const socialFund = taxesInputValue * 0.03;
-  const ndfl = taxesInputValue * 0.13;
+  const pensionFund = Math.round(taxesInputValue * 0.22);
+  const medicalFund = Math.round(taxesInputValue * 0.05);
+  const socialFund = Math.round(taxesInputValue * 0.03);
+  const ndfl = Math.round(taxesInputValue * 0.13);
   const total = taxesInputValue + pensionFund + medicalFund + socialFund;
   pensionFundId.textContent = pensionFund;
   medicalFundId.textContent = medicalFund;
@@ -25,4 +25,7 @@ function getTaxes(event) {
 
   return pensionFund, medicalFund, socialFund, total;
 }
+
+// taxesInput.addEventListener("input", getTaxes);
+
 taxesForm.addEventListener("submit", getTaxes);
