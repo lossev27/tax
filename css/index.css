@@ -36,22 +36,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
-    .get-taxes__button {
-        width: 110px;
-    }
 
-    .get-taxes {
-        padding: 5px 10px;
-    }
-
-    .cards {
-        margin: 95px 0 0;
-    }
-
-
-
-}
 
 
 .cards {
@@ -75,4 +60,21 @@
 .card__text {
     line-height: 24px;
     font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .get-taxes__button {
+        width: 110px;
+    }
+
+    .get-taxes {
+        padding: 5px 10px;
+    }
+
+    .cards {
+        margin: 95px 0 0;
+    }
+
+
+
 }
