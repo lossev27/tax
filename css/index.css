@@ -7,9 +7,6 @@
     text-transform: uppercase
 }
 
-.get-taxes {
-    padding: 5px 10px;
-}
 
 .form__title {
     font-weight: normal;
@@ -34,11 +31,24 @@
 
 }
 
+.get-taxes {
+    padding: 6px;
+}
+
+
 @media screen and (min-width: 768px) {
     .get-taxes__button {
         width: 110px;
-
     }
+
+    .get-taxes {
+        padding: 5px 10px;
+    }
+
+    .cards {
+        margin: 95px 0 0;
+    }
+
 }
 
 
@@ -48,10 +58,12 @@
     gap: 20px;
     list-style-type: none;
     padding: 0;
-    margin: 95px 0 0;
+    margin: 65px 0 0;
 }
 
-.card {}
+.card {
+    text-align: center;
+}
 
 .card__icon {
     font-size: 35px;
