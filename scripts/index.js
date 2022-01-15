@@ -20,10 +20,7 @@ function getTaxes(e) {
   socialFundId.textContent = socialFund;
   ndflId.textContent = ndfl;
   totalId.textContent = total;
-
-  console.log(pensionFund, medicalFund, socialFund, total, ndfl);
-
-  return pensionFund, medicalFund, socialFund, total;
+  return;
 }
 
 // taxesInput.addEventListener("input", getTaxes);
