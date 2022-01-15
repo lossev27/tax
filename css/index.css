@@ -49,6 +49,8 @@
         margin: 95px 0 0;
     }
 
+
+
 }
 
 
@@ -68,4 +70,9 @@
 .card__icon {
     font-size: 35px;
     color: #6eafff;
+}
+
+.card__text {
+    line-height: 24px;
+    font-size: 16px;
 }
